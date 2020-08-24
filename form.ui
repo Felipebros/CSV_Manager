@@ -17,14 +17,33 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>40</y>
+      <x>220</x>
+      <y>100</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>Push&amp;Button</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_sair">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>140</y>
       <width>80</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>&amp;Sair</string>
     </property>
    </widget>
   </widget>
@@ -39,12 +58,24 @@
    </property>
    <widget class="QMenu" name="menuteste">
     <property name="title">
-     <string>teste</string>
+     <string>&amp;Arquivo</string>
+    </property>
+    <addaction name="action_Sair"/>
+   </widget>
+   <widget class="QMenu" name="menu_Sobre">
+    <property name="title">
+     <string>S&amp;obre</string>
     </property>
    </widget>
    <addaction name="menuteste"/>
+   <addaction name="menu_Sobre"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Sair">
+   <property name="text">
+    <string>&amp;Sair</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

@@ -6,6 +6,13 @@ from PySide2.QtUiTools import QUiLoader
 from PySide2.QtWidgets import QApplication
 from PySide2.QtCore import QFile, QIODevice
 
+def clicado():
+    QApplication.quit()
+
+def altera_texto():
+    window.pushButton.setMinimumWidth(200)
+    window.pushButton.setText('Boa noite a todos!')
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
@@ -16,6 +23,8 @@ if __name__ == "__main__":
         sys.exit(-1)
     loader = QUiLoader()
     window = loader.load(ui_file)
+    window.pushButton.clicked.connect(altera_texto)
+    window.btn_sair.clicked.connect(clicado)
     ui_file.close()
     if not window:
         print(loader.errorString())
