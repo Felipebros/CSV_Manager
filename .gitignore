@@ -201,3 +201,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Qt project
+main.pyproject
+main.pyproject.user
